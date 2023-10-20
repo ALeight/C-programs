@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1694381763 source:c:\users\bendikkristoffersen\onedrive - finter mobility as\documents\ntnu - programmering\prog1001\grprog - programmeringide\oblig\oblig_1\oblig1.c
+	<stdio.h>
+	<string.h>
+
+1694382249 source:c:\users\bendikkristoffersen\onedrive - finter mobility as\documents\ntnu - programmering\prog1001\grprog - programmeringide\oblig\oblig_1\oblig_1-ny.c
+	<stdio.h>
+	<stdlib.h>
+
