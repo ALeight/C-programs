@@ -20,8 +20,8 @@ int main(){
         scanf(" %i", &a[i]);
 
         if (a[i] < MIN || a[i] > MAX) {
-            printf("\nError.\n");
-            i--; // Decrement current iteration, as invalid number entered
+            printf("\nError. Please reenter integer in range %i - %i.\n", MIN,MAX);
+            i--; // Decrement current iteration as an invalid number entered
         }
     }
 
@@ -31,15 +31,15 @@ int main(){
         printf(" %i ", a[i]);
     }
 
+    // Accepting letters
     for (int i = 0; i < 10; i++){
         printf("\nEnter letters, one at a time: \n");
         scanf(" %c", &b[i]);
 
-        // toupper every entered letter
-        // printf(" %c", toupper(b[i]));
 
         if (!isalpha(b[i])){
             printf("\nOnly accepted letters (a-z) or (A-Z).");
+            i--; // Decrement current iteration as an invalid letter has been entered
         }
     }
 
