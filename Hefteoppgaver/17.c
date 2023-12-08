@@ -71,6 +71,7 @@ int main(){
         printf("Do you want to run the program again? (Y/n).\n");
         scanf(" %c", &choice);
 
+        // Dispose of remaining
         while (getchar() != '\n');
 
     // Make choice uppercase either way, for cleaner code
