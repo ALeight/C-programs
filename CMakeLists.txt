@@ -5,4 +5,7 @@ project(C_Programs C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(C_Programs
-        Hefteoppgaver/test.c)
+        Hefteoppgaver/19.c
+)
+
+
