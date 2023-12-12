@@ -2,7 +2,8 @@
 * Task 22 in GRPROG
 */
 
-#include "stdio.h"
+#include "stdio.h"  // printf, scanf
+#include "ctype.h"  // toupper
 
 void makeSquare(int width, int height){
     if (width == 0 || height == 0){
@@ -21,6 +22,7 @@ void makeSquare(int width, int height){
                 printf(" "); // Blank space to fill in middle
             }
 
+
             // Added blank space to make asterix adjacent at edges
             printf(" ");
         }
@@ -29,7 +31,25 @@ void makeSquare(int width, int height){
 }
 
 int main(){
-    makeSquare(6,6);
+    int width, height;
+    char yes;
+
+    do {
+        // Ask user for input values
+        printf("Input width and height: ");
+        scanf(" %i %i", &width, &height);
+
+        // Consume newline left in buffer
+        getchar();
+
+        // Testing function
+        makeSquare(width, height);
+
+        printf("Do you want to run program again? (y/n): ");
+        scanf(" %c", &yes);
+
+    } while (toupper(yes == 'y'));
+
 
     return 0;
 }
