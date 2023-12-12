@@ -5,17 +5,7 @@
 #include "stdio.h"      // printf, scanf
 #include "ctype.h"      // toupper
 
-int sumKvadrat(int tall, int tall2, int tall3){
-    int resultA = tall * tall;
-    int resultB = tall2 * tall2;
-    int resultC = tall3 * tall3;
-
-    printf("\t Result A: %i\n", resultA);
-    printf("\tResult B: %i\n", resultB);
-    printf("\tResult C: %i\n", resultC);
-
-
-}
+int sumKvadrat(int tall, int tall2, int tall3);
 
 int main(){
     int t1, t2, t3;
@@ -33,4 +23,23 @@ int main(){
     } while (toupper(yes == 'y'));
 
     return 0;
+}
+
+/**
+*   Returns result of each number squared
+ *
+ *   @param tall - first number to be squared
+ *   @param tall2 - second number to be squared
+ *   @param tall3 - last number
+*/
+int sumKvadrat(int tall, int tall2, int tall3){
+    int resultA = tall * tall;
+    int resultB = tall2 * tall2;
+    int resultC = tall3 * tall3;
+
+    printf("\t Result A: %i\n", resultA);
+    printf("\tResult B: %i\n", resultB);
+    printf("\tResult C: %i\n", resultC);
+
+
 }
